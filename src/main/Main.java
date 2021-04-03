@@ -10,7 +10,7 @@ import java.util.Comparator;
 public class Main {
 
     static FileOutputStream oStream;
-    static boolean fileOut = false;
+    static boolean fileOut = true;
 
     public enum Hand {
         HIGH(0, "high card"), O_PAIR(1, "one pair"),
