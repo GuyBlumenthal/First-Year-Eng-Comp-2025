@@ -12,6 +12,7 @@ public class Main {
     static FileOutputStream oStream;
     static boolean fileOut = true;
 
+    // Enum declaring poker hands
     public enum Hand {
         HIGH(0, "high card"), O_PAIR(1, "one pair"),
         T_PAIR(2, "two pair"), T_KIND(3, "three of a kind"),
@@ -23,6 +24,7 @@ public class Main {
             this.strength = s;
             this.loc_name = n;
         }
+        // Compare and return the higher strength hand, prio for the target hand
         public Hand compare(Hand hand, Hand target) {
             if (hand == target)
                 return hand;
@@ -38,6 +40,8 @@ public class Main {
         }
     }
 
+    // The Unit Card class
+    // Used to store card data
     static class Card {
         int val;
         int suit;
@@ -71,41 +75,53 @@ public class Main {
 
     public static void main (String[] args) {
 
+        // Open the output stream in case we are looking to output to a file
         try {
             oStream = new FileOutputStream(new File("output.txt"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
+        // The flop, this will not change as we draw new cards
         Card[] flop = {
             randomCard(),
             randomCard(),
             randomCard()
         };
+
+        // The initial two card hand
         Card[] hand = {
             randomCard(),
             randomCard()
         };
+
+        // Here we will output the flop and hand for clarity
 
         output("Flop (Does not Change)");
         outputCards(flop);
 
         output ("With a hand of size 2");
         outputCards(hand);
+
+        // Analysing the two card hand
         output("The result of this hand is a " + fiveCardBest(combine(hand,flop)) + '\n');
 
+        // Add a card to the hand
         hand = combine(hand, randomCard());
 
         output("With a hand of size 3");
         outputCards(hand);
 
+        // Analyse the 3 card hand
         multiCardBest(flop, hand);
 
+        // Add a card to the hand
         hand = combine(hand, randomCard());
 
         output("With a hand of size 4");
         outputCards(hand);
 
+        // Analyse the 4 card hand
         multiCardBest(flop, hand);
 
     }
