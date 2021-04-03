@@ -37,11 +37,11 @@ class MainTest {
                 new Main.Card(4, 1),
         };
         Main.Card[] straight = {
-                new Main.Card(0, 1),
-                new Main.Card(1, 0),
-                new Main.Card(2, 0),
+                new Main.Card(2, 1),
                 new Main.Card(3, 0),
                 new Main.Card(4, 0),
+                new Main.Card(5, 0),
+                new Main.Card(14, 0),
         };
         Main.Card[] flush = {
                 new Main.Card(0, 1),
