@@ -1,0 +1,87 @@
+Flop (Does not Change)
+	10 of Spades
+	6 of Diamonds
+	8 of Hearts
+ 
+With a hand of size 2
+	3 of Hearts
+	8 of Clubs
+ 
+The result of this hand is a one pair
+
+With a hand of size 3
+	3 of Hearts
+	8 of Clubs
+	7 of Clubs
+ 
+Best hand of a high card: 
+	10 of Spades
+	8 of Hearts
+	8 of Clubs
+	7 of Clubs
+	6 of Diamonds
+ 
+Best hand of a one pair: 
+	8 of Hearts
+	8 of Clubs
+	10 of Spades
+	7 of Clubs
+	6 of Diamonds
+ 
+Best hand of a two pair: 
+ 
+Best hand of a three of a kind: 
+ 
+Best hand of a straight: 
+ 
+Best hand of a flush: 
+ 
+Best hand of a full house: 
+ 
+Best hand of a four of a kind: 
+ 
+Best hand of a straight flush: 
+ 
+Best hand of a royal flush: 
+ 
+With a hand of size 4
+	3 of Hearts
+	8 of Clubs
+	7 of Clubs
+	9 of Clubs
+ 
+Best hand of a high card: 
+	10 of Spades
+	9 of Clubs
+	8 of Hearts
+	8 of Clubs
+	6 of Diamonds
+ 
+Best hand of a one pair: 
+	8 of Hearts
+	8 of Clubs
+	10 of Spades
+	9 of Clubs
+	6 of Diamonds
+ 
+Best hand of a two pair: 
+ 
+Best hand of a three of a kind: 
+ 
+Best hand of a straight: 
+	10 of Spades
+	9 of Clubs
+	8 of Hearts
+	7 of Clubs
+	6 of Diamonds
+ 
+Best hand of a flush: 
+ 
+Best hand of a full house: 
+ 
+Best hand of a four of a kind: 
+ 
+Best hand of a straight flush: 
+ 
+Best hand of a royal flush: 
+ 
